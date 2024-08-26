@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pruebaEbaDeploy/static/css/main.e6c13ad2.css",
+    "main.js": "/pruebaEbaDeploy/static/js/main.5ba1d882.js",
+    "static/js/453.ad6eb26e.chunk.js": "/pruebaEbaDeploy/static/js/453.ad6eb26e.chunk.js",
+    "index.html": "/pruebaEbaDeploy/index.html",
+    "main.e6c13ad2.css.map": "/pruebaEbaDeploy/static/css/main.e6c13ad2.css.map",
+    "main.5ba1d882.js.map": "/pruebaEbaDeploy/static/js/main.5ba1d882.js.map",
+    "453.ad6eb26e.chunk.js.map": "/pruebaEbaDeploy/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.5ba1d882.js"
+  ]
+}

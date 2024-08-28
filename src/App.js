@@ -1,10 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-
-function Home() {
-  return <h2>Home Page</h2>;
-}
-
+import Home from './Home'
+import { ChakraProvider } from '@chakra-ui/react'
+import Header from './utils/Header';
 function About() {
   return <h2>About Page</h2>;
 }
@@ -15,15 +13,10 @@ function Contact() {
 
 function App() {
   return (
+    <ChakraProvider>
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </nav>
+      <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -31,6 +24,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </ChakraProvider>
   );
 }
 

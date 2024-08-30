@@ -16,6 +16,7 @@ function App() {
     <ChakraProvider>
     <Router>
       <div>
+      <Header/>
       <Home/>
         <Routes>
           <Route path="/" element={<Home />} />

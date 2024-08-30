@@ -13,7 +13,7 @@ export default function Header() {
     />
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
-        <a className="nav-item nav-link pr-4 pl-5" href="/">
+        <a className="nav-item nav-link pr-4 pl-5" href="/pruebaEbaDeploy/home">
           Inicio
         </a>
         <div className="dropdown show">

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Fondo from "./images/fondo.jpg";
-import { Button, ButtonGroup, textDecoration } from '@chakra-ui/react'
+import { Button, ButtonGroup, Divider, textDecoration, Box, AbsoluteCenter } from "@chakra-ui/react";
 import JobsCard from "./utils/JobsCard";
-import Projects from "./utils/Projects"
+import Projects from "./utils/Projects";
+import ContactHome from "./utils/ContactHome";
+import Footer from "./utils/Footer";
 export default function Home() {
-
   return (
     <div>
       <div
@@ -25,7 +26,7 @@ export default function Home() {
             fontStyle: "normal",
             fontSize: "4rem",
           }}
-         >
+        >
           ESTUDIO DE INGENIERIA CIVIL
         </h1>
         <h2
@@ -43,73 +44,33 @@ export default function Home() {
           que enfrentan nuestras comunidades.
         </h2>
 
-          <a href="#" style={{textDecoration:"none",}}>
-        <Button colorScheme="teal" size="lg" variant="outline">
-        Contactanos
-        </Button>
+        <a href="#" style={{ textDecoration: "none" }}>
+          <Button colorScheme="teal" size="lg" variant="outline">
+            Contactanos
+          </Button>
         </a>
       </div>
-     
-     <JobsCard/>
-      <Projects/>
-      <div className="card">
-        <div className="card-body">
-          <h1 className="card-title text-center pb-5">
-            VISITA NUESTRAS SUCURSALES
-          </h1>
-          <div className="row">
-            <div className="col-md-6 card ">
-              <div className="card-body d-flex flex-column justify-content-center align-items-center">
-                <i
-                  className="card-title fas fa-solid fa-house-user text-info"
-                  style={{ fontSize: 30 }}
-                />
-                <h2 className="card-title text-center">
-                  San Luis 1516 - Of. 211, Villa María (Cba.)
-                </h2>
-              </div>
-            </div>
-            <div className="col-md-6 card ">
-              <div className="card-body d-flex flex-column justify-content-center align-items-center">
-                <i
-                  className="card-title fas fa-solid fa-house-user text-danger"
-                  style={{ fontSize: 30 }}
-                />
-                <h2 className="card-title text-center">
-                  Belgrano 505, Justiniano Posse (Cba.)
-                </h2>
-              </div>
-            </div>
-            <div className="col-md-4 card">
-              <div className="card-body d-flex flex-column justify-content-center align-items-center">
-                <i
-                  style={{ fontSize: 30 }}
-                  className="fa fa-regular fa-envelope text-info p-3"
-                />
-                <h2 className="text-center">Envianos un mail</h2>
-              </div>
-            </div>
-            <div className="col-md-4 card ">
-              <div className="card-body d-flex flex-column justify-content-center align-items-center">
-                <i
-                  style={{ fontSize: 30 }}
-                  className="fa fa-brands fa-instagram text-info p-3"
-                />
-                <h2 className="text-center">Seguinos en instagram</h2>
-              </div>
-            </div>
-            <div className="col-md-4 card ">
-              <div className="card-body d-flex flex-column justify-content-center align-items-center">
-                <i
-                  style={{ fontSize: 30 }}
-                  className="fa fa-brands fa-whatsapp text-info p-3"
-                />
-                <h2 className="text-center">Envianos un whatsapp</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <JobsCard />
+      <Divider />
+      <Projects />
+      <Box position="relative" padding="10">
+        <Divider />
+        <AbsoluteCenter bg="white" px="4">
+        <h1
+          className="text-center text-info"
+          style={{
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: 200,
+            fontStyle: "normal",
+            fontSize: "2rem",
+          }}
+        >
+        Contactanos</h1>
+        </AbsoluteCenter>
+      </Box>
+      <ContactHome />
+      <Footer/>
     </div>
   );
 }

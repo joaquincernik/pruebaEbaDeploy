@@ -54,7 +54,7 @@ function Carta({ imagen, titulo, texto, breakpoint }) {
 }
 export default function JobsCard() {
   return (
-    <div className="container dedicamos ">
+    <div className="container dedicamos my-5">
       <h1
         className="text-center py-5"
         style={{

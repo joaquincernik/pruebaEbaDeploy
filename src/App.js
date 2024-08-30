@@ -14,7 +14,7 @@ function Contact() {
 function App() {
   return (
     <ChakraProvider>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
       <Header/>
         <Routes>

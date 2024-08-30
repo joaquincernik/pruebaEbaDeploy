@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joaquincernik.github.io/pruebaEbaDeploy/",
+  "homepage": "https://joaquincernik.github.io/pruebaEbaDeploy",
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",

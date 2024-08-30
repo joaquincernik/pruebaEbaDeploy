@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/pruebaEbaDeploy/home/static/css/main.e6c13ad2.css",
-    "main.js": "/pruebaEbaDeploy/home/static/js/main.e18e79cf.js",
-    "static/js/453.ad6eb26e.chunk.js": "/pruebaEbaDeploy/home/static/js/453.ad6eb26e.chunk.js",
-    "static/media/fotoInfraestructura.jpg": "/pruebaEbaDeploy/home/static/media/fotoInfraestructura.f12372a6da9f6f00c05d.jpg",
-    "static/media/agrimensura1.jpg": "/pruebaEbaDeploy/home/static/media/agrimensura1.67df30b5195b75eec162.jpg",
-    "static/media/IMAGEN 1.jpg": "/pruebaEbaDeploy/home/static/media/IMAGEN 1.7928e7e40917c154d39f.jpg",
-    "static/media/fotoHidraulica.jpg": "/pruebaEbaDeploy/home/static/media/fotoHidraulica.f67776c4bc0bbe1e0c2c.jpg",
-    "static/media/fondo.jpg": "/pruebaEbaDeploy/home/static/media/fondo.5f08b745df46d2ae226e.jpg",
-    "static/media/fotoIngenieriaAmbiental.jpg": "/pruebaEbaDeploy/home/static/media/fotoIngenieriaAmbiental.f0157fc4c6f96b21e7b2.jpg",
-    "static/media/fotoEjecucionObras.jpeg": "/pruebaEbaDeploy/home/static/media/fotoEjecucionObras.1ada577569ba7a29789e.jpeg",
-    "static/media/fotoTopografia.jpg": "/pruebaEbaDeploy/home/static/media/fotoTopografia.6c7e382843de5c77b018.jpg",
-    "static/media/logoEBAnegro.png": "/pruebaEbaDeploy/home/static/media/logoEBAnegro.0c29e054bfb9bc857c99.png",
-    "static/media/logoEBAblanco.png": "/pruebaEbaDeploy/home/static/media/logoEBAblanco.d8d41697e9b71403fd73.png",
-    "index.html": "/pruebaEbaDeploy/home/index.html",
-    "main.e6c13ad2.css.map": "/pruebaEbaDeploy/home/static/css/main.e6c13ad2.css.map",
-    "main.e18e79cf.js.map": "/pruebaEbaDeploy/home/static/js/main.e18e79cf.js.map",
-    "453.ad6eb26e.chunk.js.map": "/pruebaEbaDeploy/home/static/js/453.ad6eb26e.chunk.js.map"
+    "main.css": "/pruebaEbaDeploy/static/css/main.e6c13ad2.css",
+    "main.js": "/pruebaEbaDeploy/static/js/main.f14d6810.js",
+    "static/js/453.ad6eb26e.chunk.js": "/pruebaEbaDeploy/static/js/453.ad6eb26e.chunk.js",
+    "static/media/fotoInfraestructura.jpg": "/pruebaEbaDeploy/static/media/fotoInfraestructura.f12372a6da9f6f00c05d.jpg",
+    "static/media/agrimensura1.jpg": "/pruebaEbaDeploy/static/media/agrimensura1.67df30b5195b75eec162.jpg",
+    "static/media/IMAGEN 1.jpg": "/pruebaEbaDeploy/static/media/IMAGEN 1.7928e7e40917c154d39f.jpg",
+    "static/media/fotoHidraulica.jpg": "/pruebaEbaDeploy/static/media/fotoHidraulica.f67776c4bc0bbe1e0c2c.jpg",
+    "static/media/fondo.jpg": "/pruebaEbaDeploy/static/media/fondo.5f08b745df46d2ae226e.jpg",
+    "static/media/fotoIngenieriaAmbiental.jpg": "/pruebaEbaDeploy/static/media/fotoIngenieriaAmbiental.f0157fc4c6f96b21e7b2.jpg",
+    "static/media/fotoEjecucionObras.jpeg": "/pruebaEbaDeploy/static/media/fotoEjecucionObras.1ada577569ba7a29789e.jpeg",
+    "static/media/fotoTopografia.jpg": "/pruebaEbaDeploy/static/media/fotoTopografia.6c7e382843de5c77b018.jpg",
+    "static/media/logoEBAnegro.png": "/pruebaEbaDeploy/static/media/logoEBAnegro.0c29e054bfb9bc857c99.png",
+    "static/media/logoEBAblanco.png": "/pruebaEbaDeploy/static/media/logoEBAblanco.d8d41697e9b71403fd73.png",
+    "index.html": "/pruebaEbaDeploy/index.html",
+    "main.e6c13ad2.css.map": "/pruebaEbaDeploy/static/css/main.e6c13ad2.css.map",
+    "main.f14d6810.js.map": "/pruebaEbaDeploy/static/js/main.f14d6810.js.map",
+    "453.ad6eb26e.chunk.js.map": "/pruebaEbaDeploy/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.e18e79cf.js"
+    "static/js/main.f14d6810.js"
   ]
 }

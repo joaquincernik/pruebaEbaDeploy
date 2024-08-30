@@ -18,9 +18,9 @@ function App() {
       <div>
       <Header/>
         <Routes>
-          <Route path="/pruebaEbaDeploy/home" element={<Home />} />
-          <Route path="/pruebaEbaDeploy/about" element={<About />} />
-          <Route path="/pruebaEbaDeploy/contact" element={<Contact />} />
+          <Route path="pruebaEbaDeploy/home" element={<Home />} />
+          <Route path="pruebaEbaDeploy/about" element={<About />} />
+          <Route path="pruebaEbaDeploy/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

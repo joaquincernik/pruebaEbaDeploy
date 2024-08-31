@@ -5,6 +5,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Header from "./utils/Header";
 import Footer from "./utils/Footer";
 import Agrimensura from "./utils/servicios/Agrimensura";
+import Contacto from "./utils/Contacto";
 function App() {
   return (
     <ChakraProvider>
@@ -16,6 +17,7 @@ function App() {
             <Route path="servicios/">
               <Route path="agrimensura" element={<Agrimensura />} />
             </Route>
+            <Route path="contacto/" element={<Contacto/>}/>
           </Route>
         </Routes>
       </Router>

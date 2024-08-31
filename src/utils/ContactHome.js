@@ -11,6 +11,7 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { CartaContacto } from "./Contacto";
 export default function () {
   return (
     <div className="container my-3">
@@ -44,55 +45,23 @@ export default function () {
         </Stack>
       </Card>
 
-      <SimpleGrid
-        spacing={4}
-        my="5"
-        templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
-      >
-      <Card>
-          <CardHeader align='center' pb='2'>
-            <Heading size="md">
-            <i
-                  style={{ fontSize: 25 }}
-                  className="fa fa-regular fa-envelope text-info p-3"
-                />
-              Envianos un mail
-            </Heading>
-          </CardHeader>
-          <CardBody align='center' py='1'>
-          <Button >ebaingenieria@gmail.com</Button>
-          </CardBody>
-        </Card>
-        <Card>
-          <CardHeader align='center' pb='2'>
-            <Heading size="md">
-            <i
-                  style={{ fontSize: 25 }}
-                  className="fa fa-brands fa-whatsapp text-info p-3"
-                />
-              Envianos un whatsapp
-            </Heading>
-          </CardHeader>
-          <CardBody align='center' py='1'>
-          <Button >3537325241</Button>
-          </CardBody>
-        </Card>
-        <Card pb='7'>
-          <CardHeader align='center' pb='2'>
-            <Heading size="md">
-            <i
-                  style={{ fontSize: 25 }}
-                  className="fa fa-brands fa-instagram text-info p-3"
-                />
-              Seguinos en instagram
-            </Heading>
-          </CardHeader>
-          <CardBody align='center' pt='1'>
-          <Button >@eba.ingenieria</Button>
-          </CardBody>
-        </Card>
-       
-      </SimpleGrid>
+      <div className="row my-5">
+      <CartaContacto
+            clase="fa fa-regular fa-envelope p-3"
+            titulo='Envianos un mail!'
+            boton="ebaingenieria@gmail.com"
+          />
+           <CartaContacto
+            clase="fa fa-brands fa-instagram p-3"
+            titulo='Seguinos en instagram!'
+            boton="@eba.ingenieria"
+          />
+           <CartaContacto
+            clase="fa fa-regular fa-whatsapp p-3"
+            titulo='Envianos un mensaje!'
+            boton="3537325241"
+          />
+      </div>
     </div>
   );
 }

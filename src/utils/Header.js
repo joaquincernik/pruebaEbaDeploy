@@ -53,7 +53,7 @@ export default function Header() {
         <a className="nav-item nav-link pr-4 " href="#">
           Proyectos
         </a>
-        <a className="nav-item nav-link pr-4  " href="/equipo">
+        <a className="nav-item nav-link pr-4  " href="/pruebaEbaDeploy/contacto">
           Contacto
         </a>
       </div>

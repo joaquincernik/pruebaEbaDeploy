@@ -32,6 +32,7 @@ function Carta({ imagen, titulo, texto,nombreLink=titulo.toLowerCase()}) {
             src={imagen}
             alt="Green double couch with wooden legs"
             borderRadius="lg"
+            filter='brightness(70%)'
           />
           <Stack mt="6" spacing="3">
             <Heading
@@ -85,7 +86,7 @@ export default function JobsCard() {
           imagen={fotoHidraulica}
           titulo="Hidrologia e hidraulica"
           texto="Nos encargamos del estudio, diseño y gestión de proyectos relacionados con el agua en diversas formas"
-          link='hidrologia-e-hidraulica'
+          nombreLink='hidrologia-e-hidraulica'
           />
         
         <Carta
@@ -102,14 +103,14 @@ export default function JobsCard() {
           imagen={fotoIngenieriaAmbiental}
           titulo="Ingenieria ambiental"
           texto="Realizamos diseño, implementación y gestión de soluciones que protejan el medio ambiente y promuevan el desarrollo sostenible"
-           link='ingenieria-ambiental'
+           nombreLink='ingenieria-ambiental'
 
         />
         <Carta
           imagen={fotoObras}
           titulo="Ejecucion y direccion de obras"
           texto="Llevamos a cabo y supervisamos la construcción de proyectos de ingeniería civil, asegurando que se cumplan los estándares de calidad, seguridad, plazos y presupuesto"
-          link="ejecucion-y-direccion-de-obras"
+          nombreLink="ejecucion-y-direccion-de-obras"
 
         />
       </div>

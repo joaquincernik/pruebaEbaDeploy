@@ -19,7 +19,9 @@ import {
 } from "@chakra-ui/react";
 import { Stack, HStack, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion"
-function Carta({ imagen, titulo, texto}) {
+import { Link } from "react-router-dom";
+function Carta({ imagen, titulo, texto,nombreLink=titulo.toLowerCase()}) {
+  const link ='/pruebaEbaDeploy/servicios/'+ nombreLink;
   return (
     
     <div className="col-md-4">
@@ -46,9 +48,11 @@ function Carta({ imagen, titulo, texto}) {
         </CardBody>
         <Divider />
         <CardFooter justifyContent="center">
+        <Link to={link}>
           <Button variant="solid" colorScheme="teal">
             Ver mas
           </Button>
+          </Link>
         </CardFooter>
       </Card>
     </div>
@@ -80,7 +84,10 @@ export default function JobsCard() {
         <Carta
           imagen={fotoHidraulica}
           titulo="Hidrologia e hidraulica"
-          texto="Nos encargamos del estudio, diseño y gestión de proyectos relacionados con el agua en diversas formas"/>
+          texto="Nos encargamos del estudio, diseño y gestión de proyectos relacionados con el agua en diversas formas"
+          link='hidrologia-e-hidraulica'
+          />
+        
         <Carta
           imagen={fotoTopografia}
           titulo="Topografia"
@@ -95,11 +102,15 @@ export default function JobsCard() {
           imagen={fotoIngenieriaAmbiental}
           titulo="Ingenieria ambiental"
           texto="Realizamos diseño, implementación y gestión de soluciones que protejan el medio ambiente y promuevan el desarrollo sostenible"
+           link='ingenieria-ambiental'
+
         />
         <Carta
           imagen={fotoObras}
           titulo="Ejecucion y direccion de obras"
           texto="Llevamos a cabo y supervisamos la construcción de proyectos de ingeniería civil, asegurando que se cumplan los estándares de calidad, seguridad, plazos y presupuesto"
+          link="ejecucion-y-direccion-de-obras"
+
         />
       </div>
     </div>

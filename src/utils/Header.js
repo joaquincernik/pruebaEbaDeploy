@@ -1,5 +1,4 @@
 import Image from "../logoEBAnegro.png";
-
 export default function Header() {
   return (
     <header className="mb-3">
@@ -13,7 +12,7 @@ export default function Header() {
     />
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
-        <a className="nav-item nav-link pr-4 pl-5">
+        <a className="nav-item nav-link pr-4 pl-5" href="/pruebaEbaDeploy/">
           Inicio
         </a>
         <div className="dropdown show">
@@ -29,11 +28,13 @@ export default function Header() {
             Nuestros servicios
           </a>
           <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a className="dropdown-item" href="/servicios/agrimensura">
+            <a className="dropdown-item" href="/pruebaEbaDeploy/servicios/agrimensura">
               Agrimensura
             </a>
-            <a className="dropdown-item" href="#">
-              Hidrologia e hidraulica
+
+            
+            <a className="dropdown-item" >
+            Hidrologia e hidraulica
             </a>
             <a className="dropdown-item" href="#">
               Topografia

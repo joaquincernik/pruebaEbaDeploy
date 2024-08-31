@@ -4,10 +4,13 @@ import { Button, ButtonGroup, Divider, textDecoration, Box, AbsoluteCenter } fro
 import JobsCard from "./utils/JobsCard";
 import Projects from "./utils/Projects";
 import ContactHome from "./utils/ContactHome";
-import Footer from "./utils/Footer";
+import { motion } from "framer-motion"
+
+
 export default function Home() {
+
   return (
-    <div>
+    <div style={{marginBottom:"8rem"}}>
       <div
         style={{
           backgroundImage: `url(${Fondo})`,
@@ -18,17 +21,26 @@ export default function Home() {
         }}
         className="d-flex flex-column align-items-center justify-content-center mb-5"
       >
-        <h1
+      <motion.h1
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <h1 
           className="p-4 pt-5 text-center text-white"
           style={{
             fontFamily: "Montserrat, sans-serif",
             fontWeight: 400,
             fontStyle: "normal",
             fontSize: "4rem",
+            
           }}
         >
           ESTUDIO DE INGENIERIA CIVIL
         </h1>
+      
+    </motion.h1>
+        
         <h2
           className="p-4 text-center text-white"
           style={{
@@ -70,7 +82,6 @@ export default function Home() {
         </AbsoluteCenter>
       </Box>
       <ContactHome />
-      <Footer/>
     </div>
   );
 }

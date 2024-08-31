@@ -18,10 +18,12 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { Stack, HStack, VStack } from "@chakra-ui/react";
-
-function Carta({ imagen, titulo, texto, breakpoint }) {
+import { motion } from "framer-motion"
+function Carta({ imagen, titulo, texto}) {
   return (
+    
     <div className="col-md-4">
+      
       <Card maxW="sm">
         <CardBody>
           <Image
@@ -54,7 +56,9 @@ function Carta({ imagen, titulo, texto, breakpoint }) {
 }
 export default function JobsCard() {
   return (
+    
     <div className="container dedicamos my-5">
+      
       <h1
         className="text-center py-5"
         style={{

@@ -1,30 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Home from './Home'
-import { ChakraProvider } from '@chakra-ui/react'
-import Header from './utils/Header';
-function About() {
-  return <h2>About Page</h2>;
-}
-
-function Contact() {
-  return <h2>Contact Page</h2>;
-}
-
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import { ChakraProvider } from "@chakra-ui/react";
+import Header from "./utils/Header";
+import Footer from "./utils/Footer";
+import Agrimensura from "./utils/servicios/Agrimensura";
 function App() {
   return (
     <ChakraProvider>
-    <Router>
-      <div>
-      <Header/>
-      <Home/>
+      <Router>
+        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/pruebaEbaDeploy/">
+            <Route index element={<Home />} />
+            <Route path="servicios/">
+              <Route path="agrimensura" element={<Agrimensura />} />
+            </Route>
+          </Route>
         </Routes>
-      </div>
-    </Router>
+      </Router>
+      <Footer />
     </ChakraProvider>
   );
 }

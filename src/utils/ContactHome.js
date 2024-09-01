@@ -19,6 +19,8 @@ export default function () {
         direction={{ base: "column", sm: "row" }}
         overflow="hidden"
         variant="outline"
+        shadow="none" bgColor="rgba(0, 0, 0, 0.04)"
+         align="center"
       >
         <Image
           objectFit="cover"
@@ -28,20 +30,34 @@ export default function () {
         />
 
         <Stack align="center">
-          <CardBody align="center">
-            <Heading size="xl" fontFamily="Raleway, sans-sherif">
+        <CardHeader>
+        <Heading  size="xl"
+            fontWeight="400"
+            fontFamily="Raleway, sans-sherif"
+            letterSpacing="0.2rem"
+            color="blue.900"
+            pl={5}>
               Visita nuestra sucursal
             </Heading>
 
-            <Text py="4">📍Belgrano 505, Justiniano Posse (Cordoba)</Text>
-            <Button
+        </CardHeader>
+          <CardBody>
+            <Text fontSize="1.2rem" fontFamily="Montserrat, sans-sherif">📍Belgrano 505, Justiniano Posse (Cordoba)</Text>
+          </CardBody>
+          <CardFooter>
+          <Button
               leftIcon={<ExternalLinkIcon />}
               variant="solid"
-              colorScheme="teal"
+              bgGradient="linear(to-r, blue.700, blue.900)"
+              color="white"
+              _hover={{
+                background: "white",
+                color: "blue.800",
+              }}
             >
               Ir a google maps
             </Button>
-          </CardBody>
+          </CardFooter>
         </Stack>
       </Card>
 

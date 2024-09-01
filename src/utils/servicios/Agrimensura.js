@@ -33,7 +33,7 @@ export default function Agrimensura() {
         height="75vh"
       >
         <Heading
-          size="4xl"
+          size="3xl"
           fontFamily="Raleway, sans-sherif"
           className="text-white"
           fontWeight="300"
@@ -57,7 +57,7 @@ export default function Agrimensura() {
         <Card align="center" p={6} my={5}>
           <CardBody>
             <List
-              spacing={5}
+              spacing={7}
               style={{
                 fontFamily: "Montserrat, sans-serif",
                 fontWeight: 300,
@@ -125,7 +125,7 @@ export default function Agrimensura() {
                 </Heading>
 
                 <List
-                  spacing={5}
+                  spacing={7}
                   style={{
                     fontFamily: "Montserrat, sans-serif",
                     fontWeight: 300,
@@ -188,7 +188,7 @@ export default function Agrimensura() {
                 </Heading>
 
                 <List
-                  spacing={5}
+                  spacing={7}
                   style={{
                     fontFamily: "Montserrat, sans-serif",
                     fontWeight: 300,

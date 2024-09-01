@@ -11,7 +11,7 @@ import {
 
 export function CartaContacto({clase, titulo, boton}) {
   return (
-    <div className="col-md-4">
+    <div className="col-md-4 my-3">
       <Card align="center" py="10" shadow="none" bgColor="rgba(0, 0, 0, 0.04)">
         <CardHeader pb="2" color="blue.700">
           <i style={{ fontSize: 30 }} className={clase} />
@@ -55,10 +55,10 @@ export default function Contacto() {
           background: `url(${contactoFoto}) center/cover no-repeat`,
         }}
         width="100%"
-        height="75vh"
+        height="70vh"
       >
         <Heading
-          size="4xl"
+          size="3xl"
           fontFamily="Raleway, sans-sherif"
           className="text-white"
           fontWeight="400"

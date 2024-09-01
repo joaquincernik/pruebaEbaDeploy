@@ -16,7 +16,7 @@ import LogoImagen from "../images/IMAGEN 1.jpg";
 
 function InstagramCard({ titulo, ubicacion, imagenPerfil, imagen, texto }) {
   return (
-    <div className="col-md-6">
+    <div className="col-md-6 my-3">
       <Card maxW="lg">
         <CardHeader>
           <Flex spacing="4">
@@ -60,7 +60,7 @@ export default function Projects() {
           fontFamily: "Raleway, sans-serif",
           fontWeight: 400,
           fontStyle: "normal",
-          fontSize: "3.4rem",
+          fontSize: "3.1rem",
           letterSpacing: "0.5rem",
           lineHeight:'1.5'
         }

@@ -19,7 +19,7 @@ export default function Home() {
           width: "100%",
           height: "100vh",
         }}
-        className="d-flex flex-column align-items-center justify-content-center mb-5"
+        className="d-flex flex-column align-items-center justify-content-center mb-5 main-banner"
       >
       <motion.h1
       initial={{ opacity: 0, y: -50 }}
@@ -27,13 +27,12 @@ export default function Home() {
       transition={{ duration: 1 }}
     >
       <h1 
+         
           className="p-4 pt-5 text-center text-white"
           style={{
             fontFamily: "Montserrat, sans-serif",
             fontWeight: 400,
             fontStyle: "normal",
-            fontSize: "4rem",
-            
           }}
         >
           ESTUDIO DE INGENIERIA CIVIL
@@ -45,7 +44,6 @@ export default function Home() {
           className="p-4 text-center text-white"
           style={{
             fontFamily: "Montserrat, sans-serif",
-            fontSize: "2rem",
             fontWeight: 300,
             letterSpacing: "2px",
             lineHeight: 1.5,

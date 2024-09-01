@@ -74,7 +74,6 @@ export default function JobsCard() {
           fontFamily: "Barlow, sans-serif",
           fontWeight: 400,
           fontStyle: "normal",
-          fontSize: "3.2rem",
           letterSpacing: "0.5rem",
         }}
       >

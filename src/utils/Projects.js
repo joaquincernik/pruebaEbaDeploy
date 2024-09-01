@@ -54,13 +54,12 @@ function InstagramCard({ titulo, ubicacion, imagenPerfil, imagen, texto }) {
 }
 export default function Projects() {
   return (
-    <div className="container my-5 text-align-center">
+    <div className="container my-5 text-align-center hola">
       <h1 className="py-5 text-center" style={
         {
           fontFamily: "Raleway, sans-serif",
           fontWeight: 400,
           fontStyle: "normal",
-          fontSize: "3.1rem",
           letterSpacing: "0.5rem",
           lineHeight:'1.5'
         }

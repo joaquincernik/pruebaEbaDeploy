@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { CartaContacto } from "./Contacto";
+import { Link } from "react-router-dom";
 export default function () {
   return (
     <div className="container my-3">
@@ -55,7 +56,9 @@ export default function () {
                 color: "blue.800",
               }}
             >
+            <Link to='https://maps.app.goo.gl/rnFvRu9TdGEhX5T29'>
               Ir a google maps
+              </Link>
             </Button>
           </CardFooter>
         </Stack>

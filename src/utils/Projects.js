@@ -13,57 +13,64 @@ import {
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import LogoImagen from "../images/IMAGEN 1.jpg";
-
+import { motion } from "framer-motion";
 function InstagramCard({ titulo, ubicacion, imagenPerfil, imagen, texto }) {
   return (
     <div className="col-md-6 my-3">
-      <Card maxW="lg">
-        <CardHeader>
-          <Flex spacing="4">
-            <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
-              <Avatar name="Segun Adebayo" src={imagenPerfil} />
+      
+        <Card maxW="lg">
+          <CardHeader>
+            <Flex spacing="4">
+              <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
+                <Avatar name="Segun Adebayo" src={imagenPerfil} />
 
-              <Box>
-                <Heading size="sm">{titulo}</Heading>
-                <Text>{ubicacion}</Text>
-              </Box>
+                <Box>
+                  <Heading size="sm">{titulo}</Heading>
+                  <Text>{ubicacion}</Text>
+                </Box>
+              </Flex>
             </Flex>
-          </Flex>
-        </CardHeader>
-        <CardBody>
-          <Text>{texto}</Text>
-        </CardBody>
-        <Image objectFit="cover" src={imagen} alt="Chakra UI" />
+          </CardHeader>
+          <CardBody>
+            <Text>{texto}</Text>
+          </CardBody>
+          <Image objectFit="cover" src={imagen} alt="Chakra UI" />
 
-        <CardFooter
-          justify="space-between"
-          flexWrap="wrap"
-          sx={{
-            "& > button": {
-              minW: "136px",
-            },
-          }}
-        >
-          <Button leftIcon={<ExternalLinkIcon />} flex="1" variant="ghost">
-            Mira este post en instagram
-          </Button>
-        </CardFooter>
-      </Card>
+          <CardFooter
+            justify="space-between"
+            flexWrap="wrap"
+            sx={{
+              "& > button": {
+                minW: "136px",
+              },
+            }}
+          >
+            <Button leftIcon={<ExternalLinkIcon />} flex="1" variant="ghost">
+              Mira este post en instagram
+            </Button>
+          </CardFooter>
+        </Card>
+ 
     </div>
   );
 }
 export default function Projects() {
   return (
     <div className="container my-5 text-align-center hola">
-      <h1 className="py-5 text-center" style={
-        {
+    
+      <h1
+        className="py-5 text-center"
+        style={{
           fontFamily: "Raleway, sans-serif",
           fontWeight: 400,
           fontStyle: "normal",
           letterSpacing: "0.5rem",
-          lineHeight:'1.5'
-        }
-      } >Mira alguno de nuestros ultimos <span className="bg-info text-white px-3">trabajos</span></h1>
+          lineHeight: "1.5",
+        }}
+      >
+        Mira alguno de nuestros ultimos{" "}
+        <span className="bg-info text-white px-3">trabajos</span>
+      </h1>
       <div className="row">
         <InstagramCard
           titulo="eba.ingenieria"

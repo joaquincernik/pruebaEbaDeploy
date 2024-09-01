@@ -7,6 +7,7 @@ import fotoObras from "../images/fotoEjecucionObras.jpeg";
 import fotoIngenieriaAmbiental from "../images/fotoIngenieriaAmbiental.jpg";
 import {
   Card,
+  Box,
   CardHeader,
   CardBody,
   CardFooter,
@@ -20,11 +21,15 @@ import {
 import { Stack, HStack, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
 function Carta({ imagen, titulo, texto, nombreLink = titulo.toLowerCase() }) {
   const link = "/pruebaEbaDeploy/servicios/" + nombreLink;
   return (
-    <div className="col-md-4 my-3">
-      <Card maxW="sm">
+    <motion.div className="col-md-4 my-3" 
+    whileHover={{
+      scale:'1.02',
+    }}>
+      <Card maxW="sm" >
         <CardBody>
           <Image
             src={imagen}
@@ -62,11 +67,12 @@ function Carta({ imagen, titulo, texto, nombreLink = titulo.toLowerCase() }) {
           </Link>
         </CardFooter>
       </Card>
-    </div>
+    </motion.div>
   );
 }
 export default function JobsCard() {
   return (
+    
     <div className="container dedicamos my-5">
       <h1
         className="text-center py-5"
@@ -79,6 +85,10 @@ export default function JobsCard() {
       >
         ¿A que nos <span className="text-info">dedicamos</span>?
       </h1>
+     
+     
+    
+   
       <div className="row">
         <Carta
           imagen={FotoAgrimensura}

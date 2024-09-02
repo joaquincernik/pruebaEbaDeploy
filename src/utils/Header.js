@@ -39,12 +39,13 @@ export default function Header() {
                 Nuestros servicios
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <Link to="/pruebaEbaDeploy/servicios/agrimensura/">
                 <a
                   className="dropdown-item"
-                  href="/pruebaEbaDeploy/servicios/agrimensura"
                 >
                   Agrimensura
                 </a>
+                </Link>
 
                 <a className="dropdown-item">Hidrologia e hidraulica</a>
                 <a className="dropdown-item" href="#">
@@ -64,12 +65,13 @@ export default function Header() {
             <a className="nav-item nav-link pr-4 " href="#">
               Proyectos
             </a>
+            <Link to="/pruebaEbaDeploy/contacto/">
             <a
               className="nav-item nav-link pr-4  "
-              href="/pruebaEbaDeploy/contacto"
             >
               Contacto
             </a>
+            </Link>
           </div>
         </div>
       </nav>

@@ -27,6 +27,7 @@ export default function Agrimensura() {
           justifyContent: "center",
           textAlign: "center",
           background: `url(${fotoAgrimensura}) center/cover no-repeat`,
+          
         }}
         filter="grayscale(85%)"
         width="100%"

@@ -53,6 +53,7 @@ export default function Contacto() {
           justifyContent: "center",
           textAlign: "center",
           background: `url(${contactoFoto}) center/cover no-repeat`,
+          
         }}
         width="100%"
         height="70vh"

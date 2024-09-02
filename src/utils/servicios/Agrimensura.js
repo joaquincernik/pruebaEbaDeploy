@@ -16,6 +16,7 @@ import limitesAgrimensura from "../../images/limites-agrimensura.jpeg";
 import georreferenciacion from "../../images/georreferenciacion.jpg";
 export default function Agrimensura() {
   return (
+    
     <Box w="100%" align="center" pb={5}>
       <Box
         sx={{

@@ -14,10 +14,8 @@ function App() {
         <Routes>
           <Route path="/pruebaEbaDeploy/">
             <Route index element={<Home />} />
-            <Route path="servicios/">
-              <Route path="agrimensura" element={<Agrimensura />} />
-            </Route>
-            <Route path="contacto/" element={<Contacto/>}/>
+            <Route path="servicios/agrimensura" element={<Agrimensura />} />
+            <Route path="contacto/" element={<Contacto />} />
           </Route>
         </Routes>
       </Router>

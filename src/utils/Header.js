@@ -39,16 +39,16 @@ export default function Header() {
                 Nuestros servicios
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <Link to="/pruebaEbaDeploy/servicios/agrimensura">
+                <Link to="/pruebaEbaDeploy/servicios/agrimensura" style={{ textDecoration: "none" }}>
                   <a
                     className="dropdown-item"
-                    style={{ textDecoration: "none" }}
+                    
                   >
                     Agrimensura
                   </a>
                 </Link>
 
-                <a className="dropdown-item disabled">
+                <a className="dropdown-item disabled" href="#">
                   Hidrologia e hidraulica
                 </a>
                 <a className="dropdown-item disabled" href="#">
@@ -68,10 +68,9 @@ export default function Header() {
             <a className="nav-item nav-link pr-4 disbled" href="#">
               Proyectos
             </a>
-            <Link to="/pruebaEbaDeploy/contacto">
+            <Link to="/pruebaEbaDeploy/contacto" style={{ textDecoration: "none" }}>
               <a
                 className="nav-item nav-link pr-4"
-                style={{ textDecoration: "none" }}
               >
                 Contacto
               </a>

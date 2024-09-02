@@ -24,7 +24,7 @@ export default function Home() {
           backgroundSize: "cover",
           width: "100%",
           height: "100vh",
-          backgroundAttachment:'fixed'
+          backgroundAttachment: "fixed",
         }}
         className="d-flex flex-column align-items-center justify-content-center mb-5 main-banner"
       >
@@ -63,13 +63,11 @@ export default function Home() {
             que enfrentan nuestras comunidades.
           </h2>
         </motion.h2>
-        <a href="#" style={{ textDecoration: "none" }}>
-          <Link to="/pruebaEbaDeploy/contacto">
+        <Link to="/pruebaEbaDeploy/contacto">
           <Button colorScheme="teal" size="lg" variant="outline">
             Contactanos
           </Button>
-            </Link>
-        </a>
+        </Link>
       </div>
 
       <JobsCard />

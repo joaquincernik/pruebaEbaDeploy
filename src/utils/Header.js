@@ -29,7 +29,7 @@ export default function Header() {
             <div className="nav-item dropdown show">
               <a
                 className="btn btn-white dropdown-toggle text-muted nav-item nav-link pr-4"
-                href="#"
+        
                 role="button"
                 id="dropdownMenuLink"
                 data-toggle="dropdown"
@@ -47,24 +47,24 @@ export default function Header() {
                     Agrimensura
                   </a>
                 </Link>
-                <a className="dropdown-item disabled" href="#">
+                <a className="dropdown-item disabled" >
                   Hidrologia e hidraulica
                 </a>
-                <a className="dropdown-item disabled" href="#">
+                <a className="dropdown-item disabled" >
                   Topografia
                 </a>
-                <a className="dropdown-item disabled" href="#">
+                <a className="dropdown-item disabled">
                   Infraestructura
                 </a>
-                <a className="dropdown-item disabled" href="#">
+                <a className="dropdown-item disabled" >
                   Ingenieria ambiental
                 </a>
-                <a className="dropdown-item disabled" href="#">
+                <a className="dropdown-item disabled" >
                   Ejecucion y direccion de obras
                 </a>
               </div>
             </div>
-            <a className="nav-item nav-link pr-4 disbled" href="#">
+            <a className="nav-item nav-link pr-4 disbled">
               Proyectos
             </a>
             <Link to="/pruebaEbaDeploy/contacto">

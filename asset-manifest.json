@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pruebaEbaDeploy/static/css/main.696b709f.css",
-    "main.js": "/pruebaEbaDeploy/static/js/main.ec0d5606.js",
+    "main.js": "/pruebaEbaDeploy/static/js/main.58a38ae3.js",
     "static/js/453.ad6eb26e.chunk.js": "/pruebaEbaDeploy/static/js/453.ad6eb26e.chunk.js",
     "static/media/fotoInfraestructura.jpg": "/pruebaEbaDeploy/static/media/fotoInfraestructura.f12372a6da9f6f00c05d.jpg",
     "static/media/agrimensura1.jpg": "/pruebaEbaDeploy/static/media/agrimensura1.67df30b5195b75eec162.jpg",
@@ -19,11 +19,11 @@
     "static/media/logoEBAblanco.png": "/pruebaEbaDeploy/static/media/logoEBAblanco.d8d41697e9b71403fd73.png",
     "index.html": "/pruebaEbaDeploy/index.html",
     "main.696b709f.css.map": "/pruebaEbaDeploy/static/css/main.696b709f.css.map",
-    "main.ec0d5606.js.map": "/pruebaEbaDeploy/static/js/main.ec0d5606.js.map",
+    "main.58a38ae3.js.map": "/pruebaEbaDeploy/static/js/main.58a38ae3.js.map",
     "453.ad6eb26e.chunk.js.map": "/pruebaEbaDeploy/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.696b709f.css",
-    "static/js/main.ec0d5606.js"
+    "static/js/main.58a38ae3.js"
   ]
 }

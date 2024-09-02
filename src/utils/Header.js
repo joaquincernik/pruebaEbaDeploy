@@ -39,38 +39,42 @@ export default function Header() {
                 Nuestros servicios
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <Link to="/pruebaEbaDeploy/servicios/agrimensura">
-                <a
-                  className="dropdown-item"
-                >
-                  Agrimensura
-                </a>
+                <Link to="/pruebaEbaDeploy/servicios/agrimensura">
+                  <a
+                    className="dropdown-item"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Agrimensura
+                  </a>
                 </Link>
 
-                <a className="dropdown-item">Hidrologia e hidraulica</a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item disabled">
+                  Hidrologia e hidraulica
+                </a>
+                <a className="dropdown-item disabled" href="#">
                   Topografia
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item disabled" href="#">
                   Infraestructura
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item disabled" href="#">
                   Ingenieria ambiental
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item disabled" href="#">
                   Ejecucion y direccion de obras
                 </a>
               </div>
             </div>
-            <a className="nav-item nav-link pr-4 " href="#">
+            <a className="nav-item nav-link pr-4 disbled" href="#">
               Proyectos
             </a>
             <Link to="/pruebaEbaDeploy/contacto">
-            <a
-              className="nav-item nav-link pr-4  "
-            >
-              Contacto
-            </a>
+              <a
+                className="nav-item nav-link pr-4"
+                style={{ textDecoration: "none" }}
+              >
+                Contacto
+              </a>
             </Link>
           </div>
         </div>

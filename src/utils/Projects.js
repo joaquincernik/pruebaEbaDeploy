@@ -13,7 +13,6 @@ import {
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import LogoImagen from "../images/IMAGEN 1.jpg";
-import { motion } from "framer-motion";
 function InstagramCard({ titulo, ubicacion, imagenPerfil, imagen, texto }) {
   return (
     <div className="col-md-6 my-3">

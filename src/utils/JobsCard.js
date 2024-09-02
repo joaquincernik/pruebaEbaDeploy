@@ -7,18 +7,15 @@ import fotoObras from "../images/fotoEjecucionObras.jpeg";
 import fotoIngenieriaAmbiental from "../images/fotoIngenieriaAmbiental.jpg";
 import {
   Card,
-  Box,
-  CardHeader,
   CardBody,
   CardFooter,
   Image,
   Heading,
   Text,
   Divider,
-  ButtonGroup,
   Button,
 } from "@chakra-ui/react";
-import { Stack, HStack, VStack } from "@chakra-ui/react";
+import { Stack} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 

@@ -7,13 +7,12 @@ import {
   Stack,
   Heading,
   Text,
-  Button,
-  SimpleGrid,
+  Button
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { CartaContacto } from "./Contacto";
 import { Link } from "react-router-dom";
-export default function () {
+export default function ContactHome() {
   return (
     <div className="container my-3">
       <Card

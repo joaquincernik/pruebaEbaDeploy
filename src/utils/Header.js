@@ -29,7 +29,6 @@ export default function Header() {
             <div className="nav-item dropdown show">
               <a
                 className="btn btn-white dropdown-toggle text-muted nav-item nav-link pr-4"
-        
                 role="button"
                 id="dropdownMenuLink"
                 data-toggle="dropdown"
@@ -39,42 +38,40 @@ export default function Header() {
                 Nuestros servicios
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <Link to="/pruebaEbaDeploy/servicios/agrimensura">
                   <a
                     className="dropdown-item"
                     style={{ textDecoration: "none" }}
+                    href="/pruebaEbaDeploy/servicios/agrimensura"
                   >
                     Agrimensura
                   </a>
-                </Link>
-                <a className="dropdown-item disabled" >
+                <a className="dropdown-item disabled" href="/pruebaEbaDeploy/" >
                   Hidrologia e hidraulica
                 </a>
-                <a className="dropdown-item disabled" >
+                <a className="dropdown-item disabled" href="/pruebaEbaDeploy/">
                   Topografia
                 </a>
-                <a className="dropdown-item disabled">
+                <a className="dropdown-item disabled" href="/pruebaEbaDeploy/">
                   Infraestructura
                 </a>
-                <a className="dropdown-item disabled" >
+                <a className="dropdown-item disabled" href="/pruebaEbaDeploy/">
                   Ingenieria ambiental
                 </a>
-                <a className="dropdown-item disabled" >
+                <a className="dropdown-item disabled" href="/pruebaEbaDeploy/">
                   Ejecucion y direccion de obras
                 </a>
               </div>
             </div>
-            <a className="nav-item nav-link pr-4 disbled">
+            <a className="nav-item nav-link pr-4 disabled" href="/pruebaEbaDeploy/">
               Proyectos
             </a>
-            <Link to="/pruebaEbaDeploy/contacto">
               <a
                 className="nav-item nav-link pr-4"
                 style={{ textDecoration: "none" }}
+                href="/pruebaEbaDeploy/contacto"
               >
                 Contacto
               </a>
-            </Link>
           </div>
         </div>
       </nav>

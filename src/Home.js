@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Fondo from "./images/fondo.jpg";
 import {
   Button,
-  ButtonGroup,
   Divider,
-  textDecoration,
   Box,
   AbsoluteCenter,
 } from "@chakra-ui/react";

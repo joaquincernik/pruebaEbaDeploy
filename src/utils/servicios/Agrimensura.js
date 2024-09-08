@@ -1,4 +1,5 @@
 import { Heading, Image, Stack } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import {
   Box,
   Highlight,
@@ -14,22 +15,31 @@ import { CheckCircleIcon, CheckIcon, EmailIcon } from "@chakra-ui/icons";
 import imagenLevantamientos from "../../images/levantamientos-topograficos.jpg";
 import limitesAgrimensura from "../../images/limites-agrimensura.jpeg";
 import georreferenciacion from "../../images/georreferenciacion.jpg";
+
+export const MotionBox=motion(Box)
 export default function Agrimensura() {
   return (
     
     <Box w="100%" align="center" pb={5}>
-      <Box
+      <MotionBox
         sx={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
           background: `url(${fotoAgrimensura}) center/cover no-repeat`,
-          
+    
         }}
         filter="grayscale(85%)"
         width="100%"
         height="75vh"
+        initial={{
+          filter:'blur(5px)' 
+          }}
+        animate={{
+          filter:'blur(0px) grayscale(85%)' 
+          }}
+        transition={{duration:1.3}}
       >
         <Heading
           size="3xl"
@@ -39,7 +49,7 @@ export default function Agrimensura() {
         >
           AGRIMENSURA
         </Heading>
-      </Box>
+      </MotionBox>
       <div className="container mt-5">
         <Box borderBottom="1px" color="blue.700">
           <Heading

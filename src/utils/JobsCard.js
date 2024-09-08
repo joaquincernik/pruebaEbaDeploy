@@ -24,7 +24,7 @@ function Carta({ imagen, titulo, texto, nombreLink = titulo.toLowerCase() }) {
   return (
     <motion.div className="col-md-4 my-3" 
     whileHover={{
-      scale:'1.02',
+      scale:'1.02',      
     }}>
       <Card maxW="sm" >
         <CardBody>

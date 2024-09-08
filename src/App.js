@@ -6,6 +6,7 @@ import Header from "./utils/Header";
 import Footer from "./utils/Footer";
 import Agrimensura from "./utils/servicios/Agrimensura";
 import Contacto from "./utils/Contacto";
+import { AnimatePresence } from "framer-motion";
 function App() {
   return (
     <ChakraProvider>

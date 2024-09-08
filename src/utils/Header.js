@@ -67,6 +67,7 @@ export default function Header() {
             <a className="nav-item nav-link pr-4 disabled" href="/pruebaEbaDeploy/">
               Proyectos
             </a>
+            <Link to='/pruebaEbaDeploy/contacto'>
               <a
                 className="nav-item nav-link pr-4"
                 style={{ textDecoration: "none" }}
@@ -74,6 +75,7 @@ export default function Header() {
               >
                 Contacto
               </a>
+              </Link>
           </div>
         </div>
       </nav>

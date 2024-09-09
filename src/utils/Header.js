@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Image from "../logoEBAnegro.png";
 export default function Header() {
   return (
@@ -6,9 +6,9 @@ export default function Header() {
       {/* Image and text */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
         <div className="d-flex">
-          <Link to="/pruebaEbaDeploy/">
+          <NavLink to="/pruebaEbaDeploy/">
             <img src={Image} className="d-inline-block" alt="" />
-          </Link>
+          </NavLink>
           <button
             class="navbar-toggler border border-white my-5"
             type="button"
@@ -23,9 +23,15 @@ export default function Header() {
         </div>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="navbar-nav mr-auto">
-            <a className="nav-item nav-link pr-4" href="/pruebaEbaDeploy/">
+          <NavLink to="/pruebaEbaDeploy/">
+            <a
+              className="nav-item nav-link pr-4"
+              style={{ textDecoration: "none" }}
+              href="/pruebaEbaDeploy/"
+            >
               Inicio
             </a>
+            </NavLink>
             <div className="nav-item dropdown show">
               <a
                 className="btn btn-white dropdown-toggle text-muted nav-item nav-link pr-4"
@@ -38,7 +44,7 @@ export default function Header() {
                 Nuestros servicios
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <Link to="/pruebaEbaDeploy/servicios/agrimensura">
+                <NavLink to="/pruebaEbaDeploy/servicios/agrimensura">
                   <a
                     className="dropdown-item"
                     style={{ textDecoration: "none" }}
@@ -46,8 +52,8 @@ export default function Header() {
                   >
                     Agrimensura
                   </a>
-                  </Link>
-                <a className="dropdown-item disabled" href="/pruebaEbaDeploy/" >
+                </NavLink>
+                <a className="dropdown-item disabled" href="/pruebaEbaDeploy/">
                   Hidrologia e hidraulica
                 </a>
                 <a className="dropdown-item disabled" href="/pruebaEbaDeploy/">
@@ -64,10 +70,13 @@ export default function Header() {
                 </a>
               </div>
             </div>
-            <a className="nav-item nav-link pr-4 disabled" href="/pruebaEbaDeploy/">
+            <a
+              className="nav-item nav-link pr-4 disabled"
+              href="/pruebaEbaDeploy/"
+            >
               Proyectos
             </a>
-            <Link to='/pruebaEbaDeploy/contacto'>
+            <NavLink to="/pruebaEbaDeploy/contacto">
               <a
                 className="nav-item nav-link pr-4"
                 style={{ textDecoration: "none" }}
@@ -75,7 +84,7 @@ export default function Header() {
               >
                 Contacto
               </a>
-              </Link>
+            </NavLink>
           </div>
         </div>
       </nav>

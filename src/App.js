@@ -6,18 +6,17 @@ import Header from "./utils/Header";
 import Footer from "./utils/Footer";
 import Agrimensura from "./utils/servicios/Agrimensura";
 import Contacto from "./utils/Contacto";
-import { AnimatePresence } from "framer-motion";
+import NotFound from "./utils/NotFound";
 function App() {
   return (
     <ChakraProvider>
       <Router>
         <Header />
         <Routes>
-          <Route path="/pruebaEbaDeploy/">
-            <Route index element={<Home />} />
-            <Route path="servicios/agrimensura" element={<Agrimensura />} />
-            <Route path="contacto/" element={<Contacto />} />
-          </Route>
+            <Route path="/pruebaEbaDeploy/" element={<Home />} />
+            <Route path="/pruebaEbaDeploy/servicios/agrimensura" element={<Agrimensura />} />
+            <Route path="/pruebaEbaDeploy/contacto" element={<Contacto />} />
+            <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
       <Footer />
